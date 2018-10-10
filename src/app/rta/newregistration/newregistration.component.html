@@ -1,0 +1,40 @@
+<div class="modal-header">
+  <h3 class="modal-title"><b>New Registration</b></h3>
+  <button type="button" class="close" (click)="activeModal.dismiss('Cross click')">×</button>
+</div>
+<div class="modal-body">
+  <div class="modal-body-left">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <div class="select-dropdown drop-cap">
+            <select class="form-input" name="differentlyAbled" style="height: 50px;width:317px;font-size: 16px;">
+              <option value="true">VEHICLE</option>
+
+            </select>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label class="form-label" style="font-size:16px">
+            ENTER VEHICLE NUMBER
+          </label>
+          <span>
+            <input class="form-input" type="text" placeholder="Ex : AP01AP1234" name="prNo" tabindex="2" style="width: 318px;">
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-body-right">
+    <img src="assets/images/barcode.png" class="">
+    <a href="new_registration.html">
+      <button type="button" class="qrCodeBtn"> Scan </button> </a>
+  </div>
+
+</div>

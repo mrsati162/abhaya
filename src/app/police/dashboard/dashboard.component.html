@@ -1,0 +1,594 @@
+<nav>
+  <div class="nav">
+    <div class="title">
+      <div class="Dashbrd">
+        <div class="dropdn">
+          <a href="#">
+            <img src="assets/images/SVG/ic_dashboard.svg" style="height:20px;background-color:#7048c3;" alt="logo"/>
+          </a>
+          <button class="dropbtn"><strong>DASHBOARD</strong></button>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="Button_Today">
+      <div class="btn-group" id="status" data-toggle="buttons">
+        <label class="btn btn-default btn-on-1 btn-sm active">
+          <input type="radio" value="1" name="multifeatured_module[module_id][status]" checked="checked">TODAY</label>
+        <label class="btn btn-default btn-off-1 btn-sm ">
+          <input type="radio" value="0" name="multifeatured_module[module_id][status]">ALL</label>
+      </div>
+    </div>
+    <div class="Link_Home">
+      <a href="#" style="margin-left: 1002px;color:#9d5cda">HOME </a>
+      <span> / DASHBOARD</span>
+    </div>
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h3 class="modal-title"><b>New Registration</b></h3>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <div class="select-dropdown drop-cap" >
+                    <select class="form-input"  name="differentlyAbled" style="height: 50px;width:317px;font-size: 16px;">
+                      <option value="true">VEHICLE</option>
+
+                    </select>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label class="form-label" style="font-size:16px">
+                    ENTER VEHICLE NUMBER
+                  </label>
+                  <span>
+                                                <input class="form-input" type="text" placeholder="Ex : AP01AP1234"
+                                                       name="prNo" tabindex="2" style="width: 318px;">
+
+                                            </span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="navigation">
+      <a href="login.html"><span> </span></a>
+    </div>
+  </div>
+</nav>
+<div class="bell-icon">
+  <!--<div class="glyphicon-ring glyphicon-red" style="margin-left: -168%;">
+          <span class="glyphicon glyphicon-bell glyphicon-bordered">
+          </span>
+          </div> -->
+  <i class="fa fa-bell-o bll" style="font-size:30px;color:white;margin-left: -291%;"></i>
+</div>
+<div class="wrapper">
+
+  <div class="Dashboard" style="margin-left: 19px;">
+    <!-- <div class="Dashboard_middle">
+
+                <div class="Dashboard_middle_left">
+                    <div class="row">
+
+                    </div>
+
+                </div>
+                <div class="Dashboard_middle_middle">
+                </div>
+                <div class="Dashboard_middle_right">
+                </div>
+
+            </div>-->
+    <div class="Dashboard_bottom" style="margin-top: 16px;">
+
+      <div class="Dashboard_bottom_left">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="col-sm-3">
+              <div class="dashboard_left_first">
+                <img src="assets/images/SVG/ic_deviceInstalled.svg" alt="logo" style="height: 44px;margin-left: 44px;margin-top: 7px;margin-bottom: 5px;" >
+                <span style="margin-left: 41px;color: #fff;font-size:13px;">Tracking</span>
+                <span style="margin-left: 42px;color: #fff;font-size:13px;">Reports</span>
+              </div>
+            </div>
+            <div class="col-sm-3" style="padding:0px 0px 0px 0px;height: 100px;">
+              <div class="dashboard_left_second">
+                <div class="totalInstall">
+                  <span style="font-size:16px;color: #48596b;"> Live Tracking </span> <br>
+                  <span style="font-size:24px;color: #48ba78; font-weight:bold;"> 1847 </span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%;background-color: #48ba78;">
+                      <span class="sr-only">70% Complete</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="col-sm-3" style="padding:0px 0px 0px 0px;height: 100px;">
+              <div class="dashboard_left_third" style="border-right: solid 1px #ccc;">
+                <div class="todayInstall">
+                  <span style="font-size:16px;color: #48596b;"> Route Deviation </span> <br> <span style="font-size:24px;color: #feaf4b;"> 03 </span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:10%;background-color: #feaf4b;">
+                      <span class="sr-only">10% Complete</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3" style="padding:0px 0px 0px 0px;height: 100px;">
+              <div class="Dashboard_bottom_fourth">
+                <div class="totalPendings">
+                  <span style="font-size:16px;color: #48596b;"> Igtinion Off </span> <br> <span style="font-size:24px;color: #FF4500;"> 01 </span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width:5%;background-color: #f78b83;">
+                      <span class="sr-only">5% Complete</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="Dashboard_bottom_right">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="col-sm-4">
+              <div class="dashboard_left_first_one">
+                <img src="assets/images/SVG/ic_Distresscall.svg" alt="logo" style="height: 44px;margin-left: 38px;margin-top: 7px;margin-bottom: 5px;" >
+                <span style="margin-left: 36px;color: #fff;font-size:13px;">Distress</span> <br>
+                <span style="margin-left: 41px;color: #fff;font-size:13px;">Alerts </span>
+              </div>
+            </div>
+            <div class="col-sm-4" style="padding:0px 0px 0px 0px;height: 100px;">
+              <div class="dashboard_left_second">
+                <div class="totalVehicles">
+                  <span style="font-size:16px;color: #48596b;"> Distress Call </span> <br> <span style="font-size:24px;color: #FF4500;"> 02 </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4" style="padding:0px 0px 0px 0px;height: 100px;">
+              <div class="dashboard_left_third" >
+                <div class="todayVehicles">
+                  <span style="font-size:16px;color: #48596b;"> Panic Alerts </span> <br> <span style="font-size:24px;color: #feaf4b;"> 01 </span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Dashboard_top">
+
+      <div class="Dashboard_top_left">
+        <div class="right_top">
+          <!--<span style="color:#475969"> District Wise Trackings </span>  -->
+          <img src="assets/images/districtwise-tracking.jpg" alt="logo">
+        </div>
+
+
+      </div>
+
+      <div class="Dashboard_top_right">
+        <div class="left_top">
+          <img src="assets/images/livetracking-report.jpg" alt="logo" style="width:85%;">
+        </div>
+      </div>
+
+      <!--<div class="glyphicon-ring glyphicon-red"> <span class="glyphicon glyphicon-bell glyphicon-bordered"></span>
+                </div>-->
+
+    </div>
+    <div class="Dashboard_LiveTracking">
+      <div class="right_top">
+        <span style="color:#475969;font-size:20px;"> Live Tracking </span>
+        <button type="button" style="margin-left: 78%;background-color: #475969;color: #fff;border-radius: 12px;border: none;"> View All</button>
+      </div>
+      <table class="table vehicleInstalltablePadding">
+        <thead>
+        <tr style="background-color: #E8D8F6; border-bottom: solid 1px #ccc;">
+          <th>Vechile Number</th>
+          <th>DL Number</th>
+          <th>Passenger Mobile Number</th>
+          <th style="padding-left: 23px !important;">Start Location</th>
+          <th style="padding-left: 25px !important;">End Location</th>
+          <th style="padding-left: 26px !important;">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td style="padding-left: 25px !important;"><img src="assets/images/SVG/ic_VehDevicemap.svg" alt="logo" class="autoimg"> AP28DK1234</td>
+          <td style="padding-left: 12px !important;padding-top: 10px !important;">DL234567890</td>
+          <td style="padding-top: 10px !important;padding-left: 14px !important;">9030165487</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;">SEZ, Hitech City - 2, Gachibowli, Hyderabad</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;">JNTU Kukatpally Hyderabad</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;color:#63c48c;">Active</td>
+        </tr>
+        <tr style="background-color: #fff6ed;border-bottom:solid 1px #ccc;">
+          <td style="padding-left: 25px !important;"><img src="assets/images/SVG/ic_VehDevicemap.svg" alt="logo" class="autoimg"> AP28DK1234</td>
+          <td style="padding-left: 12px !important;padding-top: 10px !important;">DL234567890</td>
+          <td style="padding-top: 10px !important;padding-left: 14px !important;">9030165487</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;">SEZ, Hitech City - 2, Gachibowli, Hyderabad</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;">JNTU Kukatpally Hyderabad</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;color:#63c48c;">Active</td>
+        </tr>
+        <tr>
+          <td style="padding-left: 25px !important;"><img src="assets/images/SVG/ic_VehDevicemap.svg" alt="logo" class="autoimg"> AP28DK1234</td>
+          <td style="padding-left: 12px !important;padding-top: 10px !important;">DL234567890</td>
+          <td style="padding-top: 10px !important;padding-left: 14px !important;">9030165487</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;">SEZ, Hitech City - 2, Gachibowli, Hyderabad</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;">JNTU Kukatpally Hyderabad</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;color:#63c48c;">Active</td>
+        </tr>
+        <tr>
+          <td style="padding-left: 25px !important;"><img src="assets/images/SVG/ic_VehDevicemap.svg" alt="logo" class="autoimg"> AP28DK1234</td>
+          <td style="padding-left: 12px !important;padding-top: 10px !important;">DL234567890</td>
+          <td style="padding-top: 10px !important;padding-left: 14px !important;">9030165487</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;">SEZ, Hitech City - 2, Gachibowli, Hyderabad</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;">JNTU Kukatpally Hyderabad</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;color:#63c48c;">Active</td>
+        </tr>
+        <tr>
+          <td style="padding-left: 25px !important;"><img src="assets/images/SVG/ic_VehDevicemap.svg" alt="logo" class="autoimg"> AP28DK1234</td>
+          <td style="padding-left: 12px !important;padding-top: 10px !important;">DL234567890</td>
+          <td style="padding-top: 10px !important;padding-left: 14px !important;">9030165487</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;">SEZ, Hitech City - 2, Gachibowli, Hyderabad</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;">JNTU Kukatpally Hyderabad</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;color:#63c48c;">Active</td>
+        </tr>
+
+        </tbody>
+      </table>
+
+    </div>
+
+  </div>
+</div>
+
+
+<!--
+<nav>
+  <div class="nav">
+    <div class="title">
+      <div class="Dashbrd">
+        <div class="dropdn">
+          <a href="#">
+            <img src="assets/images/SVG/ic_dashboard.svg" style="height:20px;background-color:#7048c3;" alt="logo"/>
+          </a>
+          <button class="dropbtn"><strong>DASHBOARD</strong></button>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="Button_Today">
+      <div class="btn-group" id="status" data-toggle="buttons">
+        <label class="btn btn-default btn-on-1 btn-sm active">
+          <input type="radio" value="1" name="multifeatured_module[module_id][status]" checked="checked">TODAY</label>
+        <label class="btn btn-default btn-off-1 btn-sm ">
+          <input type="radio" value="0" name="multifeatured_module[module_id][status]">ALL</label>
+      </div>
+    </div>
+    <div class="Link_Home">
+      <a href="#" style="margin-left: 1002px;color:#9d5cda">HOME </a>
+      <span> / DASHBOARD</span>
+    </div>
+    &lt;!&ndash; The Modal &ndash;&gt;
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          &lt;!&ndash; Modal Header &ndash;&gt;
+          <div class="modal-header">
+            <h3 class="modal-title"><b>New Registration</b></h3>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          &lt;!&ndash; Modal body &ndash;&gt;
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <div class="select-dropdown drop-cap" >
+                    <select class="form-input"  name="differentlyAbled" style="height: 50px;width:317px;font-size: 16px;">
+                      <option value="true">VEHICLE</option>
+
+                    </select>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label class="form-label" style="font-size:16px">
+                    ENTER VEHICLE NUMBER
+                  </label>
+                  <span>
+                                                <input class="form-input" type="text" placeholder="Ex : AP01AP1234"
+                                                       name="prNo" tabindex="2" style="width: 318px;">
+
+                                            </span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          &lt;!&ndash; Modal footer &ndash;&gt;
+          <div class="modal-footer">
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="navigation">
+      <a href="login.html"><span> </span></a>
+    </div>
+  </div>
+</nav>
+<div class="bell-icon">
+  &lt;!&ndash;<div class="glyphicon-ring glyphicon-red" style="margin-left: -168%;">
+          <span class="glyphicon glyphicon-bell glyphicon-bordered">
+          </span>
+          </div>&ndash;&gt;
+  <i class="fa fa-bell-o bll" style="font-size:30px;color:white;margin-left: -292%;margin-top: 26px;"></i>
+</div>
+<div class="wrapperd2">
+
+  <div class="Dashboard">
+    <div class="Dashboard_middle">
+      <div class="Dashboard_middle_left">
+        <div class="Dashboard_middle_left_one">
+          <span style="margin-left:18px;">Vehicle No.</span>
+          <span style="margin-left:18px;">AP01AP1234</span>
+          <span style="margin-left:18px;">Hitech City-2 </span>
+          <span style="margin-left:18px;">Gachibowli, Hydera..</span>
+          <span style="margin-left:18px;">Ignition</span>
+          <button type="button" class="btn btn-sm btn-toggle active btn_switch" data-toggle="button" aria-pressed="true" autocomplete="off" style="margin-left:16px;">
+            <div class="handle"></div>
+          </button>
+        </div>
+        <div class="Dashboard_middle_left_two">
+          <img src="assets/images/alert-video.jpg">
+        </div>
+      </div>
+      <div class="Dashboard_middle_middle">
+        <div class="Dashboard_middle_middle_one">
+          <span style="margin-left:18px;">Vehicle No.</span>
+          <span style="margin-left:18px;">AP01AP1234</span>
+          <span style="margin-left:18px;">Hitech City-2 </span>
+          <span style="margin-left:18px;">Gachibowli, Hydera..</span>
+          <span style="margin-left:18px;">Ignition</span>
+          <button type="button" class="btn btn-sm btn-toggle btn_switch" data-toggle="button" aria-pressed="false" autocomplete="off" style="margin-left:16px;">
+            <div class="handle"></div>
+          </button>
+        </div>
+        <div class="Dashboard_middle_middle_two">
+          <img src="assets/images/alert-map.jpg">
+        </div>
+      </div>
+      <div class="Dashboard_middle_right">
+        <div class="Dashboard_middle_right_one">
+          <span style="margin-left:18px;">Vehicle No.</span>
+          <span style="margin-left:18px;">AP01AP1234</span>
+          <span style="margin-left:18px;">Hitech City-2 </span>
+          <span style="margin-left:18px;">Gachibowli, Hydera..</span>
+          <span style="margin-left:18px;">Ignition</span>
+          <button type="button" class="btn btn-sm btn-toggle btn_switch" data-toggle="button" aria-pressed="false" autocomplete="off" style="margin-left:16px;">
+            <div class="handle"></div>
+          </button>
+        </div>
+        <div class="Dashboard_middle_right_two">
+          <img src="assets/images/alert-video.jpg">
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="Dashboard_bottom">
+
+      <div class="Dashboard_bottom_left">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="col-sm-3">
+              <div class="dashboard_left_first">
+                <img src="assets/images/SVG/ic_deviceInstalled.svg" alt="logo" style="height: 44px;margin-left: 44px;margin-top: 7px;margin-bottom: 5px;" >
+                <span style="margin-left: 41px;color: #000;font-size:13px;">Tracking</span>
+                <span style="margin-left: 42px;color: #000;font-size:13px;">Reports</span>
+              </div>
+            </div>
+            <div class="col-sm-3" style="padding:0px 0px 0px 0px;height: 100px;">
+              <div class="dashboard_left_second">
+                <div class="totalInstall">
+                  <span style="font-size:16px;color: #48596b;"> Live Tracking </span> <br>
+                  <span style="font-size:24px;color: #48ba78; font-weight:bold;"> 1847 </span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%;background-color: #48ba78;">
+                      <span class="sr-only">70% Complete</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="col-sm-3" style="padding:0px 0px 0px 0px;height: 100px;">
+              <div class="dashboard_left_third" style="border-right: solid 1px #ccc;">
+                <div class="todayInstall">
+                  <span style="font-size:16px;color: #48596b;"> Route Deviation </span> <br> <span style="font-size:24px;color: #feaf4b;"> 03 </span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:10%;background-color: #feaf4b;">
+                      <span class="sr-only">10% Complete</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3" style="padding:0px 0px 0px 0px;height: 100px;">
+              <div class="Dashboard_bottom_fourth">
+                <div class="totalPendings">
+                  <span style="font-size:16px;color: #48596b;"> Igtinion Off </span> <br> <span style="font-size:24px;color: #FF4500;"> 01 </span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width:5%;background-color: #f78b83;">
+                      <span class="sr-only">5% Complete</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="Dashboard_bottom_right">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="col-sm-4">
+              <div class="dashboard_left_first_one">
+                <img src="assets/images/SVG/ic_Distresscall.svg" alt="logo" style="height: 44px;margin-left: 38px;margin-top: 7px;margin-bottom: 5px;" >
+                <span style="margin-left: 36px;color: #000;font-size:13px;">Distress</span> <br>
+                <span style="margin-left: 41px;color: #000;font-size:13px;">Alerts </span>
+              </div>
+            </div>
+            <div class="col-sm-4" style="padding:0px 0px 0px 0px;height: 100px;">
+              <div class="dashboard_left_second">
+                <div class="totalVehicles">
+                  <span style="font-size:16px;color: #48596b;"> Distress Call </span> <br> <span style="font-size:24px;color: #FF4500;"> 02 </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4" style="padding:0px 0px 0px 0px;height: 100px;">
+              <div class="dashboard_left_third" >
+                <div class="todayVehicles">
+                  <span style="font-size:16px;color: #48596b;"> Panic Alerts </span> <br> <span style="font-size:24px;color: #feaf4b;"> 01 </span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Dashboard_top">
+
+      <div class="Dashboard_top_left">
+        <div class="right_top">
+          &lt;!&ndash; <span style="color:#475969"> District Wise Trackings </span>  &ndash;&gt;
+          <img src="assets/images/districtwise-tracking.jpg" alt="logo">
+        </div>
+
+
+      </div>
+
+      <div class="Dashboard_top_right">
+        <div class="left_top">
+          <img src="assets/images/livetracking-report.jpg" alt="logo" style="width:85%;">
+        </div>
+      </div>
+
+    </div>
+    <div class="Dashboard_LiveTracking">
+      <div class="right_top">
+        <span style="color:#475969;font-size:20px;"> Live Tracking </span>
+        <button type="button" style="margin-left: 78%;background-color: #475969;color: #fff;border-radius: 12px;border: none;"> View All</button>
+      </div>
+      <table class="table vehicleInstalltablePadding">
+        <thead>
+        <tr style="background-color: #E8D8F6; border-bottom: solid 1px #ccc;">
+          <th>Vechile Number</th>
+          <th>DL Number</th>
+          <th>Passenger Mobile Number</th>
+          <th style="padding-left: 23px !important;">Start Location</th>
+          <th style="padding-left: 25px !important;">End Location</th>
+          <th style="padding-left: 26px !important;">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td style="padding-left: 25px !important;"><img src="assets/images/SVG/ic_VehDevicemap.svg" alt="logo" class="autoimg"> AP28DK1234</td>
+          <td style="padding-left: 12px !important;padding-top: 10px !important;">DL234567890</td>
+          <td style="padding-top: 10px !important;padding-left: 14px !important;">9030165487</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;">SEZ, Hitech City - 2, Gachibowli, Hyderabad</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;">JNTU Kukatpally Hyderabad</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;color:#63c48c;">Active</td>
+        </tr>
+        <tr style="background-color: #fff6ed;border-bottom:solid 1px #ccc;">
+          <td style="padding-left: 25px !important;"><img src="assets/images/SVG/ic_VehDevicemap.svg" alt="logo" class="autoimg"> AP28DK1234</td>
+          <td style="padding-left: 12px !important;padding-top: 10px !important;">DL234567890</td>
+          <td style="padding-top: 10px !important;padding-left: 14px !important;">9030165487</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;">SEZ, Hitech City - 2, Gachibowli, Hyderabad</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;">JNTU Kukatpally Hyderabad</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;color:#63c48c;">Active</td>
+        </tr>
+        <tr>
+          <td style="padding-left: 25px !important;"><img src="assets/images/SVG/ic_VehDevicemap.svg" alt="logo" class="autoimg"> AP28DK1234</td>
+          <td style="padding-left: 12px !important;padding-top: 10px !important;">DL234567890</td>
+          <td style="padding-top: 10px !important;padding-left: 14px !important;">9030165487</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;">SEZ, Hitech City - 2, Gachibowli, Hyderabad</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;">JNTU Kukatpally Hyderabad</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;color:#63c48c;">Active</td>
+        </tr>
+        <tr>
+          <td style="padding-left: 25px !important;"><img src="assets/images/SVG/ic_VehDevicemap.svg" alt="logo" class="autoimg"> AP28DK1234</td>
+          <td style="padding-left: 12px !important;padding-top: 10px !important;">DL234567890</td>
+          <td style="padding-top: 10px !important;padding-left: 14px !important;">9030165487</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;">SEZ, Hitech City - 2, Gachibowli, Hyderabad</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;">JNTU Kukatpally Hyderabad</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;color:#63c48c;">Active</td>
+        </tr>
+        <tr>
+          <td style="padding-left: 25px !important;"><img src="assets/images/SVG/ic_VehDevicemap.svg" alt="logo" class="autoimg"> AP28DK1234</td>
+          <td style="padding-left: 12px !important;padding-top: 10px !important;">DL234567890</td>
+          <td style="padding-top: 10px !important;padding-left: 14px !important;">9030165487</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;">SEZ, Hitech City - 2, Gachibowli, Hyderabad</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;">JNTU Kukatpally Hyderabad</td>
+          <td style="padding-left: 23px !important;padding-top: 10px !important;color:#63c48c;">Active</td>
+        </tr>
+
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>
+-->

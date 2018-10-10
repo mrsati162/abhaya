@@ -1,0 +1,37 @@
+<header>
+  <div class="header_top">
+    <div class="header_left">
+
+      <div class="logo">
+        <div style="position: relative;">
+          <img src="assets/images/SVG/ic_menu.svg" [ngStyle]="{'display' : !showMenuFlag ? 'initial' : 'none'}" (click)="showMenu();" alt="logo" style="height: 35px;margin-left: -16px;margin-right: 28px;position: relative;cursor: pointer;">
+          <div class="dropdown-content" style="margin-top: 52px;margin-left: -19px;" [ngStyle]="{'display' : showMenuFlag ? 'initial' : 'none'}">
+            <a routerLink="/police/dashboard" (click)="closeMenu();"> <img src="assets/images/SVG/ic_dashboard.svg" style="height: 20px;">Dash Board</a>
+            <a href="#"><img src="assets/images/SVG/ic_livetracking.svg" style="height: 20px;">Live Tracking</a>
+            <a routerLink="/police/vehicles" (click)="closeMenu();"><img src="assets/images/SVG/ic_vehclelist.svg" style="height: 20px;">Vehicles</a>
+            <a routerLink="/police/drivers" (click)="closeMenu();"><img src="assets/images/SVG/ic_driverlist.svg" style="height: 20px;">Drivers</a>
+          </div>
+          <img [ngStyle]="{'display' : showMenuFlag ? 'initial' : 'none'}" src="assets/images/SVG/ic_dashboard.svg" alt="logo" (click)="closeMenu();" style="height: 35px;margin-left: -16px;margin-right: 28px;position: relative;display:none;">
+        </div>
+        <img src="assets/images/logo.png" alt="logo" style="margin-right: 21px;">
+        <span>  <br>  </span>
+      </div>
+    </div>
+    <div class="header_right">
+      <div class="header_search">
+
+        <div class="container-1">
+          <input type="search" id="search" placeholder="Search With Vehicle No." />
+          <span class="icon"><i class="fa fa-search"></i></span>
+        </div>
+      </div>
+      <span class="icon"><i class="fa fa-bell-o p1" data-count="2" style = "font-size: 37px;color: #fff;margin-top: 38px; margin-left: 73px;"></i></span>
+      <img src="assets/images/plice-pic.png" class="profile_pic">
+      <div class="nameOffice">
+        <span class="name" style="color: #fff;"> <b>Malakondaiah </b></span> <br>
+        <span class="name" style="color: #fff;">AP DGP</span>
+        <span class="caret" style="margin-left:46px;"></span>
+      </div>
+    </div>
+  </div>
+</header>
